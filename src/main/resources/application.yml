@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+
+
+#Setting the logging levels for the service
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.thoughtmechanix: DEBUG
+  config: "classpath:logback-spring.xml"
+
+
+#eureka:
+#  instance:
+#    preferIpAddress: true
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#        defaultZone: http://localhost:8761/eureka/
+        
+#spring:
+#   zipkin:
+      #If not set, the zipkin server can be accessed at localhost:9411
+#      baseUrl: http://localhost:2222
+
+        
